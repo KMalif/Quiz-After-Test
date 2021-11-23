@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuisUTS</string>
+    <string name="Register">Register Barang</string>
+    <string name="Name">Nama Barang</string>
+    <string name="Price">Harga</string>
+    <string name="Jumlah">Jumlah</string>
+    <string name="Simpan">Simpan</string>
+</resources>
