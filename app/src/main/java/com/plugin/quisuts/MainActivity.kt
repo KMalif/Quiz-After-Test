@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         if (namaBarang != null){
             binding.namaBarang.setText(namaBarang)
-            binding.hargaBarang.setText(hargaBarang)
+            binding.hargaBarang.setText("Rp $hargaBarang")
             binding.jumlahBarang.setText(jumlahBarang)
         }
 
