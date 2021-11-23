@@ -15,15 +15,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun receiveFromRegister(){
-        val namaBarang = intent.getStringExtra("namaBarang")
-        val hargaBarang = intent.getStringExtra("hargaBarang")
-        val jumlahBarang = intent.getStringExtra("jumlahBarang")
+        var namaBarang = intent.getStringExtra("namaBarang")
+        var hargaBarang = intent.getStringExtra("hargaBarang")
+        var jumlahBarang = intent.getStringExtra("jumlahBarang")
 
-        if (namaBarang != null){
-            binding.namaBarang.setText(namaBarang)
-            binding.hargaBarang.setText("Rp $hargaBarang")
-            binding.jumlahBarang.setText(jumlahBarang)
-        }
+        binding.namaBarang.text = namaBarang
+        binding.hargaBarang.text = "Rp" + hargaBarang
+        binding.jumlahBarang.text = jumlahBarang
+
 
     }
 }

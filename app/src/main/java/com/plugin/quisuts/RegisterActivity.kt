@@ -16,11 +16,10 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun sendRegisterValue(){
-        val namaBarang = binding.etName.text.toString()
-        val hargaBarang = binding.etPrice.text.toString()
-        val jumlahBarang = binding.etItemsCount.text.toString()
-
         binding.btnRegister.setOnClickListener {
+            val namaBarang = binding.etName.text.toString()
+            val hargaBarang = binding.etPrice.text.toString()
+            val jumlahBarang = binding.etItemsCount.text.toString()
             startActivity(Intent(this, MainActivity::class.java).apply {
                 putExtra("namaBarang", namaBarang)
                 putExtra("hargaBarang", hargaBarang)
